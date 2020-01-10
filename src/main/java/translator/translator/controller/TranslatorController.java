@@ -46,6 +46,10 @@ public class TranslatorController {
         if(oldTranslator.isPresent()){
             Translator translator = oldTranslator.get();
             translator.setName(newTranslator.getName());
+            translator.setEmail(newTranslator.getEmail());
+            translator.setSourceLanguage(newTranslator.getSourceLanguage());
+            translator.setTargetLanguage(newTranslator.getTargetLanguage());
+
             _translatorRepository.save(translator);
             return new ResponseEntity<Translator>(translator, HttpStatus.OK);
         }
