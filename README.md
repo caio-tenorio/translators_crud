@@ -1,8 +1,6 @@
 # translators_crud
 
-Requirements:
-  * Java 8
-  * PostgreSQL
+Requirements: Java 8, PostgreSQL
 
 * In order to run this tool you should create a PostgreSQL database named "translators". Check application.properties to make sure your database configurations are in match (username, password, address).
 * If all your database configurations are ok, just run "./gradlew clean && ./gradlew build" in the root directory to build the jar file. 
